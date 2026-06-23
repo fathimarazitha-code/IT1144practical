@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcoFresh | Products</title>
+    <link rel="stylesheet" href="organic.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🌿 EcoFresh SuperStore</div>
+        <nav>
+            <a href="organic products.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="contact organic.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+			<span class="cart-badge">🛒 Cart (<span id="cartCount">0</span>)</span> 
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Our Organic Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="freshfruits.jpg" alt="Fruits">
+                <h3>Fresh Fruits Pack</h3>
+                <p>Rs. 1,200</p>
+                
+				<button class="add-to-cart-btn" onclick="updateCart('Fresh Fruits Pack')">Add to Cart </button>
+            </div>
+            <div class="product-card">
+                <img src="organicvegetable.webp" alt="Vegetables">
+                <h3>Organic Vegetables</h3>
+                <p>Rs. 850</p>
+              
+				<button class="add-to-cart-btn" onclick="updateCart('Organic Vegetables')">Add to Cart </button>
+            </div>
+            <div class="product-card">
+                <img src="honey.webp" alt="Honey">
+                <h3>Pure Raw Honey</h3>
+                <p>Rs. 950</p>
+              
+				<button class="add-to-cart-btn" onclick="updateCart('Pure Raw Honey')">Add to Cart </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       <p>&copy; 2026 EcoFresh. Eco Friendly E-Commerce Portal|SriLanka. All Rights Reserved.</p>
+    </footer>
+
+    <script src="organic script.js"></script>
+</body>
+</html>

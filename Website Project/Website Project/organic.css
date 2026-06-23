@@ -1,0 +1,399 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #1b5e20;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.about-section {
+	display:flex;
+	gap:40px;
+    align-items:center;
+	text-align:left;
+}
+/* About Text Column Wrapper Layout */
+.about-text {
+    color: #2c3e50;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Overriding global center alignments inside about text blocks */
+.about-text h2 {
+    color: #27ae60;
+    margin-left: 0px;
+    text-align: left;
+	display:block;
+}
+
+.about-text h3 {
+    color: #27ae60 ;
+    margin-top: 15px ;
+    margin-left: 0px ;
+    text-align: left 
+	display:block;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #1b5e20;
+}
+
+/* About Page */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-section img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+/* Products Page */
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #e65100;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* ==========================================
+   SHOPPING CART & BUTTON UI COMPONENTS
+   ========================================== */
+
+/* Premium Red Rounded Badge for Cart Counter Display */
+.cart-badge {
+    background: linear-gradient(135deg, #ff4757, #e84118);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 15px rgba(232, 65, 24, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Badge hover effect */
+.cart-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(232, 65, 24, 0.6);
+}
+
+/* Inside badge counter text styling */
+#cartCount {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+/* Green Add to Cart Button Style */
+.add-to-cart-btn {
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+/* Button hover animation */
+.add-to-cart-btn:hover {
+    background-color: #1e4d2b;
+    transform: translateY(-2px);
+}
+/* Contact & Forms */
+/* Modern Contact Split Grid Layout */
+.contact-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    margin: 30px auto;
+    max-width: 1050px;
+}
+
+/* Left side Card branding info */
+.contact-brand-card {
+    flex: 1;
+    background: linear-gradient(135deg, #1e4d2b, #27ae60);
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-brand-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff !important;
+}
+
+.contact-details-list {
+    margin-top: 30px;
+}
+
+.contact-details-list p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #e8f5e9;
+}
+
+/* Right side Input Form Fields Container */
+.contact-form-block {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group-row {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group-row label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.form-group-row input, 
+.form-group-row textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group-row input:focus, 
+.form-group-row textarea:focus {
+    border-color: #27ae60;
+    outline: none;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.15);
+}
+
+/* Luxury Form Submit Button */
+.form-submit-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-self: flex-start;
+}
+
+.form-submit-btn:hover {
+    background-color: #1e4d2b;
+}
+/* Premium Feedback Vertical Form Grid */
+.feedback-box {
+    max-width: 550px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.feedback-box h2 {
+    color: #1e4d2b;
+    margin-bottom: 25px;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* Beautiful Block stack row configuration */
+.form-field-group {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+.form-field-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.form-field-group input,
+.form-field-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #334155;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Crucial block parameters to stop input escaping box */
+}
+
+/* Luxury Interactive Focus Highlights */
+.form-field-group input:focus,
+.form-field-group textarea:focus {
+    border-color: #27ae60;
+    outline: none;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.15);
+}
+
+/* Wide Dynamic Green Action Button */
+.feedback-submit-btn {
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 5px;
+}
+
+.feedback-submit-btn:hover {
+    background-color: #1e4d2b;
+}
+
+/* Footer */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}

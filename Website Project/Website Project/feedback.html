@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcoFresh | Feedback</title>
+    <link rel="stylesheet" href="organic.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🌿 EcoFresh SuperStore</div>
+        <nav>
+            <a href="organic products.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact organic.html">Contact</a>
+            <a href="feedback.html" class="active">Feedback</a>
+        </nav>
+    </header>
+
+    <main style="background: transparent; box-shadow: none; padding: 0;">
+        <div class="feedback-box">
+            <h2>We Value Your Feedback</h2>
+            
+            <form id="feedbackForm" onsubmit="event.preventDefault();alert('🌿 EcoFresh SuperStore says:\n\nThank You! Your Valuable Feedback has been Submitted Successfully.');this.reset();">
+                <div class="form-field-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                </div>
+                
+                <div class="form-field-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                
+                <div class="form-field-group">
+                    <label for="message">Message / Review:</label>
+                    <textarea id="message" rows="5" placeholder="Your Feedback..." required></textarea>
+                </div>
+                
+                <button type="submit" class="feedback-submit-btn">Submit Feedback 📥</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EcoFresh. Eco Friendly E-Commerce Portal|SriLanka. All Rights Reserved.</p>
+    </footer>
+
+    <script src="organic script.js"></script>
+</body>
+</html>
